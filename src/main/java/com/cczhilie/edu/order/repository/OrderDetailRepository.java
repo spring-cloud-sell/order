@@ -2,6 +2,7 @@ package com.cczhilie.edu.order.repository;
 
 import com.cczhilie.edu.order.dataobject.OrderDetail;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
