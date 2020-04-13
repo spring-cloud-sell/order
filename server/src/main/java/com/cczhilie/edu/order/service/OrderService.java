@@ -15,4 +15,12 @@ public interface OrderService {
      * @return
      */
     OrderDTO create(OrderDTO orderDTO);
+
+    /**
+     * 完成订单
+     * @param orderId
+     * @return
+     */
+    OrderDTO finish(String orderId);
+
 }

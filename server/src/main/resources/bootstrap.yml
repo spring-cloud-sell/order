@@ -22,3 +22,19 @@ eureka:
       defaultZone: http://localhost:8762/eureka/
   instance:
     prefer-ip-address: true
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 1000
+    getProductInfoList:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
+
+
+
